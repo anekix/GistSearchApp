@@ -4,7 +4,7 @@
 * Vuejs
 
 
-## Design of  the app 
+## Design 
 
 App uses components based design , has following main components
 * `<User/>`
