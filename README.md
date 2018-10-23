@@ -3,6 +3,11 @@
 ## Stack
 * Vuejs
 
+## Starting Development server
+* `git clone https://github.com/anekix/GistSearchApp.git`
+* `cd GistSearchApp`
+* `npm install`
+* `npm run serve`
 
 ## Design 
 
@@ -43,3 +48,4 @@ App uses components based design , has following main components
 * tests for components
 * better error handling
 * loading screens/loaders could be displayed while gists are being fetched.
+
