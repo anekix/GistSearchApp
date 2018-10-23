@@ -23,6 +23,8 @@ App uses components based design , has following main components
 * All  informations regarding gists are fetched asynchronously.
 
 * Api calls to the github are abstracted as services.
+* **file names** are tagged `blue`
+* **file types** are tagged `grey`
 
 ## organisation of components
 ```
