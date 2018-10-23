@@ -3,7 +3,9 @@
 		<div class="user__wrapper">
 			<img 
 				:src="userAvatarUrl"
+				@load="loaded"
 				class="user__avatar" 
+				:class="{ isLoading: isLoading }"
 			/>
 			<a :href="userForkLink" target="_blank">
 				<div> {{userName}}</div>
@@ -16,7 +18,17 @@
 	
 	export default {
 		name: 'User',
-		props:[ 'userAvatarUrl','userName','userForkLink']
+		props:[ 'userAvatarUrl','userName','userForkLink'],
+		data(){
+			return{
+				isLoading:true
+			}
+		},
+		methods:{
+			loaded(){
+				this.isLoading = false
+			}
+		}
 	}
 
 </script>
@@ -28,8 +40,13 @@
 	height 46px
 	display block
 	margin 0 auto
+	border 1px solid grey
 a
 	text-decoration none
-	color blue
+	color #261919
 	font-weight bold
+
+.isLoading
+	background-color grey
+
 </style>
