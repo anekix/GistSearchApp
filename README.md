@@ -26,6 +26,7 @@ App uses components based design , has following main components
 * **file names** are tagged `blue`
 * **file types** are tagged `grey`
 
+
 ## organisation of components
 ```
 +---------------------------------------------------------+
@@ -44,6 +45,14 @@ App uses components based design , has following main components
 |                                                         |
 +---------------------------------------------------------+
 ```
+
+## Features
+
+* displays a list of public gists of a user
+* on clicking the gist link , it opens the the gist in a new tab.
+* three users who have recently forked the gist are displayed.
+* on clicking the user name, it opens the forked gist .
+
 
 ## Potential improvements
 
